@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checkout</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkout and payment page" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <header>
+    <nav class="browse">
+        <a href="index.html">
+        <img
+          src="images/Logo.png" 
+          alt="rainydays logo with mountains"
+          class="logo"
+        />
+      <ul>
+        <li><a href="browse.html">NEW RELEASES</a></li>
+        <li><a href="placeholder.html">MEN</a></li>
+        <li><a href="placeholder_1.html">WOMEN</a></li>
+      </ul>
+      <div class="navsearch">
+        <form>
+          <input type="search" placeholder="Need something?" />
+        </form>
+      </div>
+      <section class="right-side-nav">
+        <ul>
+        <p class="cart-nav"> <li><a href="browse.html">Keep browsing</a></li></p>
+       <div class="user-nav"><li><img class="user-icon" src="images/User.svg" alt="user sign in icon" /><a href="sign_in.html">Sign In</a></li></div>
+    </ul>
+  </nav>
+  </section>
+  </header>
+  <body>
+  <form>
+    <div class="input-details">
+    <h1 class="form-header"> INPUT YOUR DETAILS BELOW</h1>
+<fieldset>
+    <legend class="legend-header">Contact information</legend>
+        <label for="address" class="checkout-label" >Shipping address*</label>
+        <input type="text" name="address" id="address" class="information-form__input">
+        <label for="name" class="checkout-label" >Full name*</label>
+        <input type="text" name="name" id="name" class="information-form__input">
+        <label for="name-company" class="checkout-label" >Company (for business addresses only)</label>
+        <input type="text" name="name-company" id="name-company" class="information-form__input">
+        <label for="address-1" class="checkout-label" >Address Line 1*</label>
+        <input type="text" name="address-1" id="address-1" class="information-form__input">
+        <label for="address-2" class="checkout-label" >Address Line 2</label>
+        <input type="text" name="address-2" id="address-2" class="information-form__input">
+        <label for="city" class="checkout-label" >City*</label>
+        <input type="text" name="city" id="city" class="information-form__input">
+        <label for="city" class="checkout-label" >Zip Code*</label>
+        <input type="text" name="zip" id="zip" class="information-form__input">
+        <label for="phone" class="checkout-label" >Phone</label>
+        <input type="tel" name="phone" id="phone" class="information-form__input">
+        <label for="email" class="checkout-label">Email address</label>
+        <input type="email" name="email" id="email" class="information-form__input">
+    </fieldset>
+<fieldset>
+    <legend class="legend-header">Credit card information</legend>
+    <label for="cardname" class="checkout-label" >Name on card*</label>
+    <input type="text" name="cardname" id="cardname" class="card-form__input">
+    <label for="cardnumber" class="checkout-label" >Card number*</label>
+    <input type="text" name="cardnumber" id="cardnumber" class="card-form__input">
+    <label for="cvc" class="checkout-label" >CVC*</label>
+    <input type="text" name="cvc" id="cvc" class="card-form__input">
+</fieldset>
+</form>
+</div>
+</body>
+</html>

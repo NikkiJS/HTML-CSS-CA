@@ -1,6 +1,7 @@
 /*index start*/
 HTML,
-body {
+body,
+h1 {
   margin: 0px;
   padding: 0;
     border: 0;
@@ -20,19 +21,6 @@ ul {
   background-color: #0a3641;
 }
 
-.logo {
-  margin-left: 2vh;
-  margin-top: 0vh;
-}
-
-form {
-  display: flex;
-  margin-top: 6vh;
-  padding: 1px;
-  border: 1px solid white;
-  border-radius: 2px;
-}
-
 a {
   list-style: none;
   color: white;
@@ -41,20 +29,31 @@ a {
   text-transform: uppercase;
 }
 
+.logo {
+  margin-left: 2vh;
+  margin-top: 0vh;
+}
+
+.navsearch {
+  max-height: 24px;
+  margin-top: 6vh;
+  padding: 1px;
+  border-radius: 1px;
+}
+
 .right-side-nav {
   display: flex;
   margin-left: 20vw;
-  margin-right: 10px;
+  margin-right: 0vw;
   text-transform: capitalize;
 }
 
 .index-h1 {
   font-family: "Bebas Kai", Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  margin-bottom: 30%;
   text-align: center;
-  margin: 0px;
-  padding: 0 0 0;
-  font-size: 500%;
+  font-size: 350%;
 }
 
 .background_img {
@@ -63,31 +62,111 @@ a {
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  vertical-align: bottom;
+  margin: 0%;
+  padding: 0%;
 }
 
-.rectangle {
-  width: 100vw;
-  height: 30vh;
-  background: black;
-  opacity: 50%;
-}
-
-.bot-bg {
+.bottom-bar-bg {
+  width: 100%;
+  height: 100px;
   background-color: #0a3641;
+  padding: 0%;
+  margin: 0%;
+}
+.newsletter {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  margin-left: 40%;
 }
 
 footer {
-  background-position: bottom left;
+  font-size: smaller;
+  font-weight: bold;
   color: white;
 }
 
-/*browse start*/
-.topbar-color {
-  size: 100vw;
+/* ---------- checkout ---------- */
+
+.form-header {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-style: normal;
+  font-size: large;
+}
+
+.input-details {
+  text-align: center;
+  padding-right: 25%;
+}
+
+.checkout-label {
+  font-weight: bold;
+}
+
+.information-form__input,
+.card-form__input {
+  display: block;
+  margin: 10px;
+  margin-left: 30%;
+  border-radius: 1px;
+  text-align: left;
+  padding-right: 30%;
+}
+
+.legend-header {
+  margin-left: 30%;
+  font-weight: bold;
+}
+
+/* ---------- story ---------- */
+
+.story-nav {
   background-color: #0a3641;
 }
-/*checkout success start*/
 
+.story-logo {
+  margin-left: 44vw;
+}
+
+.story-container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.story-header {
+  position: absolute;
+  top: 2.5%;
+  left: 40%;
+  font-size: xx-large;
+  text-decoration: underline 5px;
+}
+
+.story {
+  position: absolute;
+  text-align: center;
+  font-weight: 550;
+  top: 10%;
+  left: 34%;
+  max-width: 30%;
+  font-size: xx-large;
+  color: black;
+}
+
+.story-bg {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ---------- contact ---------- */
+
+.contact-form {
+}
+
+/* ---------- success ---------- */
 .centered {
   position: relative;
   margin-top: 5%;
@@ -101,7 +180,152 @@ footer {
 
 .checkout {
   position: absolute;
-  top: 50%;
+  top: 5%;
   width: 100%;
   text-align: center;
+  font-size: larger;
+}
+
+.summary {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 15%;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.summary-product {
+  margin-top: 0%;
+  margin-left: 15%;
+  font-weight: 600;
+}
+
+.summary-price {
+  margin-top: -2%;
+  margin-left: 40%;
+  font-weight: 600;
+}
+
+.shipping {
+  position: relative;
+  margin-top: -19%;
+  margin-left: 70%;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.shipping-details {
+  text-align: right;
+  padding-right: 19%;
+  font-size: large;
+  font-weight: 550;
+}
+
+.billing {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 70%;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.billing-details {
+  text-align: center;
+  padding-left: 50%;
+  font-size: large;
+  font-weight: 550;
+}
+
+.print,
+.get-in-touch,
+.continue-shopping {
+  border-radius: 0;
+  background-color: #0a3641;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+
+.print {
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 42%;
+}
+
+.get-in-touch {
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 27%;
+}
+
+.continue-shopping {
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 12%;
+}
+
+/* ---------- contact ---------- */
+
+.contact-form {
+  float: center;
+}
+
+.contact__input,
+.contact-label,
+textarea {
+  display: block;
+  text-align: left;
+  margin-left: 25%;
+  padding-top: 1%;
+}
+
+.h1-contact {
+  margin-left: 25%;
+  font-style: italic;
+  color: #0a3641;
+  padding-top: 10px;
+}
+
+.contact-label {
+  font-weight: bold;
+}
+
+.contact__input,
+textarea {
+  border: 2.5px solid #0a3641;
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #0a3641;
+}
+
+.contact-info {
+  font-size: xx-large;
+  margin-left: 60%;
+  margin-top: 10%;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
+.contact-phone {
+  float: right;
+  margin-right: 20%;
+  margin-top: 10%;
+  font-size: x-large;
+  font-weight: bold;
+  max-width: 300px;
+}
+
+.contact-address {
+  float: right;
+  margin-right: -14%;
+  margin-top: 20%;
+  font-size: x-large;
+  font-weight: bold;
+  max-width: 300px;
 }
