@@ -1,24 +1,26 @@
 /*index start*/
-HTML,
-body,
-h1 {
-  margin: 0px;
-  padding: 0;
-    border: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 body {
-  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
 }
 
-h1 {
-  margin-top: 0px;
+@media (max-width: 1920px) {
+  main {
+    background: url(../images/unedited.png);
+    background-size: cover;
+    flex: 1;
+  }
 }
+
 form,
 input[type="button"] {
   margin: 0 !important;
 }
+
 .txt,
 .pswd {
   background-color: #fff;
@@ -53,9 +55,12 @@ a {
   margin-top: 0vh;
 }
 
+.product-search {
+  padding-top: 0px;
+}
+
 .navsearch {
   max-height: 24px;
-  margin-top: 6vh;
   padding: 1px;
   border-radius: 1px;
 }
@@ -71,10 +76,11 @@ a {
 .index-h1 {
   font-family: "Bebas Kai", Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  margin-bottom: 30%;
   text-align: center;
+  margin-top: 80px;
+  padding: 100px;
   font-size: 2rem;
-  margin-top: 50;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .background_img {
@@ -100,13 +106,12 @@ a {
   font-weight: bold;
   color: white;
   text-align: right;
-  margin-right: 0.4%;
-  margin-top: -5%;
+  padding-right: 10px;
 }
 
 .botbar {
   width: 100%;
-  height: 210px;
+  height: 165px;
   background-color: #0a3641;
 }
 
@@ -119,11 +124,12 @@ a {
 }
 
 footer {
-  font-size: x-large;
-  font-weight: bold;
-  color: #fff;
-  padding-top: 0px;
-  text-align: center;
+  position: fixed;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
 }
 
 /* ---------- browse ---------- */
@@ -145,6 +151,7 @@ footer {
   display: flex;
   padding-left: 10%;
   gap: 15%;
+  flex-wrap: wrap;
 }
 
 /* ---------- product-specific ---------- */
