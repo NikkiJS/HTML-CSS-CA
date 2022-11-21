@@ -21,17 +21,6 @@ input[type="button"] {
   margin: 0 !important;
 }
 
-.txt,
-.pswd {
-  background-color: #fff;
-  display: block;
-  border: 2px solid #2ecc71;
-  border-radius: 10px;
-  padding: 5px;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
 .browse,
 .ul-nav {
   text-align: center;
@@ -194,11 +183,10 @@ footer {
 }
 
 .product-desc {
-  max-width: 40%;
-  font-size: medium;
+  max-width: 70%;
+  font-size: 1rem;
   font-weight: normal;
-  text-align: center;
-  margin-left: 30%;
+  margin-left: 10%;
   margin-top: 1%;
 }
 
@@ -218,20 +206,22 @@ footer {
 
 .checkout-label {
   font-weight: bold;
+  margin-right: 100px;
 }
 
 .information-form__input,
 .card-form__input {
   display: block;
   margin: 2px;
-  margin-left: 30%;
+  margin-left: 20%;
   border-radius: 1px;
   text-align: left;
-  padding-right: 30%;
+  padding-right: 20%;
 }
 
 .legend-header {
-  margin-left: 30%;
+  margin-left: 0%;
+  max-width: fit-content;
   font-weight: bold;
 }
 
@@ -250,37 +240,72 @@ footer {
 }
 
 .story-logo {
-  margin-left: 44vw;
+  margin-left: 100px;
 }
 
 .story-container {
-  position: relative;
   text-align: center;
   color: black;
 }
 
+@media screen and (min-width: 601px) {
+  .story-header {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .story-header {
+    font-size: 25px;
+  }
+}
+
 .story-header {
   position: absolute;
+  margin-top: 90px;
   top: 2.5%;
-  left: 40%;
-  font-size: xx-large;
-  text-decoration: underline 5px;
+  padding-left: 32%;
+  text-decoration: underline 4px;
+}
+
+@media screen and (min-width: 601px) {
+  .story {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .story {
+    font-size: 16px;
+  }
 }
 
 .story {
   position: absolute;
   text-align: center;
   font-weight: 550;
-  top: 10%;
+  top: 20%;
+  left: 15%;
+  max-width: 70%;
+  color: black;
+}
+
+.story-1 {
+  position: absolute;
+  text-align: center;
+  font-weight: 550;
+  top: 50%;
   left: 30%;
   max-width: 40%;
-  font-size: xx-large;
+  font-size: 2rem;
   color: black;
 }
 
 .story-bg {
+  background-image: url(../images/story-bg.jpg);
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  background: cover;
 }
 
 /* ---------- success ---------- */
@@ -399,10 +424,10 @@ textarea {
 }
 
 .h1-contact {
-  margin-left: 25%;
+  margin-left: 42%;
   font-style: italic;
   color: #0a3641;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .contact-label {
