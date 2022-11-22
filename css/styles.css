@@ -266,7 +266,8 @@ footer {
 
 @media screen and (min-width: 601px) {
   .story-header {
-    font-size: 60px;
+    font-size: 80px;
+    margin-left: 400px;
   }
 }
 
@@ -286,7 +287,8 @@ footer {
 
 @media screen and (min-width: 601px) {
   .story {
-    font-size: 40px;
+    font-size: 50px;
+    margin-top: 300px;
   }
 }
 
@@ -314,110 +316,96 @@ footer {
 }
 
 /* ---------- success ---------- */
-.centered {
-  position: relative;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 12%;
-  border-style: solid;
-  height: 75vh;
-  width: 150vh;
-  background-color: #f0f2f3;
+
+@media screen and (max-width: 600px) {
+  .summary,
+  .summary-product,
+  .shipping,
+  .billing {
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 
-.checkout {
-  position: absolute;
-  top: 5%;
-  width: 100%;
-  text-align: center;
-  font-size: larger;
+@media screen and (max-width: 600px) {
+  .summary,
+  .summary-product,
+  .summary-price,
+  .shipping,
+  .shipping-details,
+  .billing,
+  .billing-details,
+  .thank-you {
+    padding-left: 20px;
+  }
 }
 
-.summary {
-  position: relative;
-  margin-top: 10%;
-  margin-left: 15%;
-  font-size: larger;
-  font-weight: bold;
+@media screen and (max-width: 600px) {
+  .get-in-touch,
+  .continue-shopping {
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0;
+    background-color: #0a3641;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+  }
 }
 
-.summary-product {
-  margin-top: 0%;
-  margin-left: 15%;
-  font-weight: 600;
+@media screen and (min-width: 601px) {
+  .thank-you,
+  .summary,
+  .summary-product,
+  .summary-price,
+  .shipping,
+  .shipping-details,
+  .billing,
+  .billing-details {
+    padding-left: 45%;
+  }
 }
 
-.summary-price {
-  margin-top: -2%;
-  margin-left: 40%;
-  font-weight: 600;
+@media screen and (min-width: 601px) {
+  .thank-you {
+    font-size: 40px;
+    font-weight: bold;
+  }
 }
 
-.shipping {
-  position: relative;
-  margin-top: -19%;
-  margin-left: 70%;
-  font-size: larger;
-  font-weight: bold;
+@media screen and (min-width: 601px) {
+  .summary,
+  .summary-product,
+  .shipping,
+  .billing {
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
-.shipping-details {
-  text-align: right;
-  padding-right: 19%;
-  font-size: large;
-  font-weight: 550;
+@media screen and (min-width: 601px) {
+  .continue-shopping {
+    text-align: center;
+    background-color: #0a3641;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 800px;
+  }
 }
 
-.billing {
-  position: relative;
-  margin-top: 10%;
-  margin-left: 70%;
-  font-size: larger;
-  font-weight: bold;
-}
-
-.billing-details {
-  text-align: center;
-  padding-left: 50%;
-  font-size: large;
-  font-weight: 550;
-}
-
-.print,
-.get-in-touch,
-.continue-shopping {
-  border-radius: 0;
-  background-color: #0a3641;
-  color: #fff;
-  font-weight: bold;
-  padding: 15px;
-  min-height: 30px;
-  min-width: 120px;
-}
-
-.print {
-  position: absolute;
-  margin-top: -10%;
-  margin-left: 42%;
-}
-
-.get-in-touch {
-  position: absolute;
-  margin-top: -10%;
-  margin-left: 27%;
-}
-
-.continue-shopping {
-  position: absolute;
-  margin-top: -10%;
-  margin-left: 12%;
+@media screen and (min-width: 601px) {
+  .get-in-touch {
+    text-align: center;
+    background-color: #0a3641;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 500px;
+  }
 }
 
 /* ---------- contact ---------- */
-
-.contact-form {
-  align-self: left;
-}
 
 .contact__input,
 .contact-label,
@@ -428,8 +416,13 @@ textarea {
   padding-top: 1%;
 }
 
+@media screen and (max-width: 600px) {
+  .h1-contact {
+    margin-left: 100px;
+  }
+}
+
 .h1-contact {
-  margin-left: 42%;
   font-style: italic;
   color: #0a3641;
   padding-top: 20px;
@@ -437,6 +430,25 @@ textarea {
 
 .contact-label {
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .contact__input,
+  textarea,
+  .contact-label {
+    margin-left: 1px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .contact-phone,
+  .contact-address,
+  .contact__input,
+  textarea,
+  .contact-label,
+  .h1-contact {
+    margin-left: 1500px;
+  }
 }
 
 .contact__input,
@@ -459,9 +471,15 @@ label {
   min-width: fit-content;
 }
 
+@media screen and (max-width: 600px) {
+  .contact-phone,
+  .contact-address {
+    margin-left: 25%;
+  }
+}
+
 .contact-phone {
   font-size: x-large;
-
   font-weight: bold;
   max-width: 175px;
 }
