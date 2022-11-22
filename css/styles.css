@@ -146,6 +146,7 @@ footer {
   padding-left: 10%;
   gap: 15%;
   flex-wrap: wrap;
+  font-weight: bold;
 }
 
 /* ---------- product-specific ---------- */
