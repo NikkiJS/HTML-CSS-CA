@@ -8,17 +8,10 @@ body {
   margin: 0px;
 }
 
-@media (max-width: 1920px) {
-  main {
-    background: url(../images/unedited.png);
-    background-size: cover;
-    flex: 1;
-  }
-}
-
-form,
-input[type="button"] {
-  margin: 0 !important;
+main {
+  background: url(../images/unedited.png);
+  background-size: cover;
+  flex: 1;
 }
 
 .browse,
@@ -62,13 +55,25 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 601px) {
+  .index-h1 {
+    font-size: 100px;
+    margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .index-h1 {
+    font-size: 50px;
+    margin-top: 30px;
+  }
+}
+
 .index-h1 {
   font-family: "Bebas Kai", Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-align: center;
-  margin-top: 80px;
   padding: 100px;
-  font-size: 2rem;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -144,20 +149,20 @@ footer {
 }
 
 /* ---------- product-specific ---------- */
-.red-jacket {
-  margin-left: 45%;
-  margin-top: 3%;
+
+@media screen and (min-width: 601px) {
+  .red-jacket,
+  .jacket-name {
+    margin-left: 46%;
+  }
 }
 
-.price-star {
-  float: right;
-  margin-top: -18%;
-  margin-right: 38%;
+.red-jacket {
+  margin-top: 3%;
 }
 
 .intro-price {
   margin-top: -18%;
-  margin-left: 38%;
   font-weight: bolder;
   font-size: large;
   color: #b40000;
@@ -171,21 +176,23 @@ footer {
   font-size: larger;
   font-weight: bolder;
   background-color: black;
-  margin-top: 16%;
-  margin-left: 45%;
 }
 
 .product-price {
   font-size: large;
   font-weight: bolder;
   text-align: center;
-  margin-left: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .product-desc {
+    font-size: 16px;
+  }
 }
 
 .product-desc {
   max-width: 70%;
-  font-size: 1rem;
-  font-weight: normal;
+  font-weight: bold;
   margin-left: 10%;
   margin-top: 1%;
 }
@@ -207,6 +214,14 @@ footer {
 .checkout-label {
   font-weight: bold;
   margin-right: 100px;
+}
+
+@media screen and (min-width: 601px) {
+  .fieldset,
+  .submit-checkout {
+    font-size: 20px;
+    margin-left: 1200px;
+  }
 }
 
 .information-form__input,
@@ -283,21 +298,10 @@ footer {
 .story {
   position: absolute;
   text-align: center;
-  font-weight: 550;
+  font-weight: bold;
   top: 20%;
   left: 15%;
   max-width: 70%;
-  color: black;
-}
-
-.story-1 {
-  position: absolute;
-  text-align: center;
-  font-weight: 550;
-  top: 50%;
-  left: 30%;
-  max-width: 40%;
-  font-size: 2rem;
   color: black;
 }
 
@@ -411,7 +415,7 @@ footer {
 /* ---------- contact ---------- */
 
 .contact-form {
-  float: center;
+  align-self: left;
 }
 
 .contact__input,
@@ -447,27 +451,23 @@ label {
 }
 
 .contact-info {
+  text-align: center;
   font-size: xx-large;
-  margin-left: 60%;
   margin-top: 10%;
   max-width: fit-content;
   min-width: fit-content;
 }
 
 .contact-phone {
-  float: right;
-  margin-right: 20%;
-  margin-top: 10%;
   font-size: x-large;
+
   font-weight: bold;
-  max-width: 300px;
+  max-width: 175px;
 }
 
 .contact-address {
-  float: right;
-  margin-right: -14%;
-  margin-top: 20%;
+  margin-top: 20px;
   font-size: x-large;
   font-weight: bold;
-  max-width: 300px;
+  max-width: 175px;
 }
