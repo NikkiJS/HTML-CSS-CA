@@ -385,26 +385,6 @@ footer {
   }
 }
 
-@media screen and (min-width: 601px) {
-  .continue-shopping {
-    text-align: center;
-    background-color: #0a3641;
-    color: #fff;
-    font-weight: bold;
-    margin-left: 800px;
-  }
-}
-
-@media screen and (min-width: 601px) {
-  .get-in-touch {
-    text-align: center;
-    background-color: #0a3641;
-    color: #fff;
-    font-weight: bold;
-    margin-left: 500px;
-  }
-}
-
 /* ---------- contact ---------- */
 
 .contact__input,
